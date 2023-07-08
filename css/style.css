@@ -1,0 +1,391 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+  padding: 50px 50px;
+}
+
+h2, p{
+  margin-top: 20px;
+}
+
+.anm1{
+  width: 100px;
+  height: 100px;
+  background: lightpink;
+  position: relative;
+  animation-name: mymove;
+  animation: mymove 4s infinite;
+  margin-top: 30px;
+  border: 2px solid black;
+  border-radius: 100%;
+}
+
+.anm2{
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+  position: relative;
+  animation: mymove 4s infinite;
+  margin-top: 30px;
+  border: 2px solid black;
+  border-radius: 100%;
+  animation-delay: 2s;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 500px;}
+}
+
+.anm3 {
+  width: 100px;
+  height: 100px;
+  background: lightgreen;
+  position: relative;
+  animation: myfirst 4s 2;
+  animation-direction: alternate;
+  margin-top: 30px;
+  border: 2px solid black;
+  border-radius: 100%;
+}
+
+@keyframes myfirst {
+  0%   {background: lightgreen; left: 0px; top: 0px;}
+  25%  {background: yellow; left: 100px; top: 0px;}
+  50%  {background: lightpink; left: 100px; top: 100px;}
+  75%  {background: lightblue; left: 0px; top: 100px;}
+  100% {background: lightgreen; left: 0px; top: 0px;}
+}
+
+.anm4{
+  width: 100px;
+  height: 100px;
+  background: lightgoldenrodyellow;
+  position: relative;
+  animation: mymove1 infinite;
+  margin-top: 30px;
+  border: 2px solid black;
+  border-radius: 100%;
+  animation-duration: 2s;
+}
+
+@keyframes mymove1 {
+  from {top: 0px;}
+  to {top: 100px;}
+}
+
+.anm5{
+  width: 100px;
+  height: 100px;
+  background: orange;
+  position: relative;
+  animation: mymove2 3s;
+  border-radius: 100%;
+  animation-delay: 2s;
+  border: 2px solid black;
+  animation-fill-mode: backwards;
+  margin-top: 30px;
+}
+
+@keyframes mymove2 {
+  from {top: 0px; background-color: lightsteelblue;}
+  to {top: 200px;}
+}
+
+.anm6 {
+  width: 100px;
+  height: 100px;
+  background: lightcoral;
+  position: relative;
+  border-radius: 100%;
+  border: 2px solid black;
+  animation: mymove3 3s;
+  animation-iteration-count: 2;
+  margin-top: 30px;
+}
+
+@keyframes mymove3 {
+  from {top: 0px;}
+  to {top: 100px;}
+}
+
+.anm7{
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  border: 2px solid black;
+  border-radius: 100%;
+  position: relative;
+  animation: mymove4 4s;
+  animation-play-state: paused;
+  margin-top: 30px;
+}
+
+@keyframes mymove4 {
+  from {left: 0px;}
+  to {left: 100px;}
+}
+
+.anm8 {
+  width: 100px;
+  height: 100px;
+  background: lightsalmon;
+  border: 2px solid black;
+  border-radius: 100%;
+  position: relative;
+  animation: mymove5 4s infinite;
+  animation-timing-function: linear;
+  margin-top: 30px;
+}
+
+@keyframes mymove5 {
+  from {left: 0px;}
+  to {left: 500px;}
+}
+
+#ex1 {
+  background-color: yellow;
+  color: red;
+}
+
+#ex2 {
+  background-color: yellow;
+  color: red;
+  all: inherit;
+}
+
+#ex3 {
+  background-color: yellow;
+  color: red;
+  all: initial;
+}
+
+#ex4 {
+  background-color: yellow;
+  color: red;
+  all: unset;
+}
+
+.ex0 {
+  font-size: small;
+  color: blue;
+  margin-top: 20px;
+}
+
+#main {
+  width: 70px;
+  height: 300px;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: 20px;
+}
+
+#main div {
+  width: 70px;
+  height: 70px;
+}
+
+#main2 {
+  width: 220px;
+  height: 300px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#main2 div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+input[type=checkbox] {
+  accent-color: green;
+  margin-top: 20px;
+}
+
+input[type=radio] {
+  accent-color: red;
+  margin-top: 20px;
+}
+
+input[type=range] {
+  accent-color: purple;
+  margin-top: 20px;
+}
+
+progress {
+  accent-color: goldenrod;
+  margin-top: 20px;
+}
+
+.a{
+  font-size: 35px;
+  font-size-adjust: 0.58;
+  font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+  font-stretch: expanded;
+  font-style: italic;
+  font-variant: small-caps;
+  font-kerning: normal; 
+  font-weight: bold;
+}
+
+.text{
+  text-align: justify;
+  text-align-last: left;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-decoration-thickness: 5px;
+  text-indent: 20px;
+  text-justify: inter-word;
+  text-orientation: mixed;
+  text-overflow: ellipsis;
+  text-shadow: 2px 2px #FF0000;
+  text-transform: uppercase;
+}
+
+.border1{
+  border: 4px dotted blue;
+  margin-top: 20px;
+}
+
+.border2{
+  margin-top: 20px;
+  border-block: 5px solid coral;
+  border-block-style: solid;
+  border-block-color: coral;
+}
+
+.border3{
+  margin-top: 20px;
+  inline-size: 70%;
+  border-block-end-width: 10px;
+  border-block-end-style: solid;
+  border-block-end-color: orange;
+  border-block-start-width: 10px;
+  border-block-start-style: solid;
+  border-block-start-color: pink;
+}
+
+.border4{
+  margin-top: 20px;
+  border-block-style: dashed dotted;
+  border-block-width: thin thick;
+}
+
+.border5{
+  margin-top: 20px;
+  border-bottom: 5px solid green;
+  border-bottom-style: solid;
+  border-bottom-color: green;
+  border-bottom-width: thick;
+  border-bottom-left-radius: 50px 20px;
+  border-bottom-right-radius: 25px;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+#table1 {
+  border-collapse: separate;
+  margin-top: 20px;
+}
+
+#example1 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+  margin-top: 20px;
+}
+
+#example2 {
+  box-sizing: border-box;
+  width: 300px;
+  height: 100px;
+  padding: 30px;  
+  border: 10px solid grey;
+  margin-top: 20px;
+}
+
+#paragraph {
+  column-count: 3;
+  column-fill: balance;
+  border: solid black 1px;
+  background-color: lightgoldenrodyellow;
+  column-gap: 40px;
+  margin-top: 20px;
+  column-rule: 4px double #ff0000;
+  column-rule-style: solid;
+  column-rule-color: #ff0000;
+  column-span: all;
+  column-width: 100px;
+  columns: 100px 3
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: coral;
+  padding: 10px;
+  margin-top: 20px;
+  grid-gap: 10px;
+  grid-row-gap: 50px;
+  grid-auto-rows: 150px;
+  grid-column-gap: 50px;
+  grid-template-rows: 100px 300px;
+}
+
+.grid-container > div {
+  background-color: lightpink;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column-start: 2;
+}
+
+ul  {
+  list-style-position: outside;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  list-style-type: circle;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.ex1{
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border: 2px solid black;
+}
+
+.ex2{
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.tr {
+  width: 100px;
+  height: 100px;
+  background: purple;
+  transition-property: width;
+  transition-duration: 2s;
+  margin-top: 20px;
+}
+
+.tr:hover {
+  width: 300px;
+}
